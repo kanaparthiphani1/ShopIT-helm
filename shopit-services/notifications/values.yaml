@@ -1,0 +1,25 @@
+deploymentName: notifications-deployment
+serviceName: notifications
+appLabel: notifications
+appName: notifications
+
+replicaCount: 1
+
+image:
+  repository: kanaparthiphani/notificationservice
+  tag: v2
+
+containerPort: 8088
+
+service:
+  type: ClusterIP
+  port: 8088
+  targetPort: 8088
+
+appname_enabled: false
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: true
+otel_enabled: true
+kafka_enabled: true

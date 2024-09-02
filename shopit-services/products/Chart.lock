@@ -1,0 +1,6 @@
+dependencies:
+- name: shopit-common
+  repository: file://../../shopit-common
+  version: 0.1.0
+digest: sha256:a2bfc1fe116ac7dea49a8088536efb8e39b20aa89f5c8ae03b269b3bca35bb0e
+generated: "2024-08-10T15:12:03.8583468+05:30"

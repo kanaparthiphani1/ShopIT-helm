@@ -1,0 +1,25 @@
+deploymentName: cart-deployment
+serviceName: cart
+appLabel: cart
+appName: cart
+
+replicaCount: 1
+
+image:
+  repository: kanaparthiphani/cart
+  tag: v3
+
+containerPort: 8085
+
+service:
+  type: ClusterIP
+  port: 8085
+  targetPort: 8085
+
+appname_enabled: false
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: true
+otel_enabled: true
+kafka_enabled: true

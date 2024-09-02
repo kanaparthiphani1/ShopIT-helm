@@ -1,0 +1,25 @@
+deploymentName: payments-deployment
+serviceName: payments
+appLabel: payments
+appName: payments
+
+replicaCount: 1
+
+image:
+  repository: kanaparthiphani/paymentservice
+  tag: v3
+
+containerPort: 8087
+
+service:
+  type: ClusterIP
+  port: 8087
+  targetPort: 8087
+
+appname_enabled: false
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: true
+otel_enabled: true
+kafka_enabled: true

@@ -1,0 +1,33 @@
+dependencies:
+- name: shopit-common
+  repository: file://../../shopit-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../shopit-services/configserver
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../shopit-services/eurekaserver
+  version: 0.1.0
+- name: products
+  repository: file://../../shopit-services/products
+  version: 0.1.0
+- name: cart
+  repository: file://../../shopit-services/cart
+  version: 0.1.0
+- name: notifications
+  repository: file://../../shopit-services/notifications
+  version: 0.1.0
+- name: apigateway
+  repository: file://../../shopit-services/apigateway
+  version: 0.1.0
+- name: payments
+  repository: file://../../shopit-services/payments
+  version: 0.1.0
+- name: orders
+  repository: file://../../shopit-services/orders
+  version: 0.1.0
+- name: users
+  repository: file://../../shopit-services/users
+  version: 0.1.0
+digest: sha256:8f1a0ca708c2276ff373d422ede332d18e9d735cd38011ed1314edae4412795f
+generated: "2024-08-10T15:38:13.5018459+05:30"

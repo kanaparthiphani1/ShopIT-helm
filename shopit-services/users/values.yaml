@@ -1,0 +1,25 @@
+deploymentName: users-deployment
+serviceName: users
+appLabel: users
+appName: users
+
+replicaCount: 1
+
+image:
+  repository: kanaparthiphani/user-service
+  tag: v3
+
+containerPort: 4141
+
+service:
+  type: ClusterIP
+  port: 4141
+  targetPort: 4141
+
+appname_enabled: false
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: false
+otel_enabled: true
+kafka_enabled: true

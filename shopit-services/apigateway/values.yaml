@@ -1,0 +1,25 @@
+deploymentName: apigateway-deployment
+serviceName: apigateway
+appLabel: apigateway
+appName: apigateway
+
+replicaCount: 1
+
+image:
+  repository: kanaparthiphani/apigateway
+  tag: v1
+
+containerPort: 8089
+
+service:
+  type: ClusterIP
+  port: 8089
+  targetPort: 8089
+
+appname_enabled: false
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: true
+otel_enabled: true
+kafka_enabled: true
